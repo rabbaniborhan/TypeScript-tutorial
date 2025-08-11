@@ -1,1 +1,2 @@
-console.log("first");
+const borhan = "dfjdsk8";
+console.log(borhan);

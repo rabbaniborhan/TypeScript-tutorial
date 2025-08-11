@@ -1,41 +1,28 @@
 {
-  // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
-    // File Layout
     "rootDir": "./src",
     "outDir": "./output",
 
-    // Environment Settings
-    "module": "esnext", // Consider "ESNext" for modern bundlers (Vite, Webpack)
+    // Use ES Modules for browser
+    "module": "esnext",
+    "moduleResolution": "bundler",
     "target": "esnext",
-    "types": [],
-    // "lib": ["esnext", "dom"],  // For browser-based projects
-    // "types": ["node"],         // For Node.js projects
+    "lib": ["esnext", "dom"],
 
-    // Other Outputs
-    "sourceMap": true,
-    "declaration": true,
-    "declarationMap": true,
-
-    // Stricter Typechecking Options
+    // Strict Type Checking
     "strict": true,
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
 
-    // Style & Safety Options
+    // Style & Safety
     "forceConsistentCasingInFileNames": true,
-    "noImplicitReturns": true,
-    "noImplicitOverride": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "noPropertyAccessFromIndexSignature": true,
 
-    // Module & JSX Options
+    // React JSX
     "jsx": "react-jsx",
+    "verbatimModuleSyntax": true,
     "isolatedModules": true,
-    "noUncheckedSideEffectImports": true,
-    "moduleDetection": "force",
+
+    // Performance
     "skipLibCheck": true
   }
 }

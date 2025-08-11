@@ -1,1 +1,3 @@
-console.log("first");
+"use strict";
+const borhan = "dfjdsk8";
+console.log(borhan);
